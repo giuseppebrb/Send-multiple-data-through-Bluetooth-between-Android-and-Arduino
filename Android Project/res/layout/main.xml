@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/red" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/red"
+        android:layout_alignBottom="@+id/red"
+        android:layout_centerHorizontal="true"
+        android:text="@string/green" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/green"
+        android:layout_alignBottom="@+id/green"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:text="@string/blue" />
+
+    <SeekBar
+        android:id="@+id/rSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/red"
+        android:layout_alignRight="@+id/red"
+        android:layout_below="@+id/red"
+        android:layout_marginTop="51dp" />
+
+    <SeekBar
+        android:id="@+id/bSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gSeek"
+        android:layout_alignLeft="@+id/blue"
+        android:layout_alignRight="@+id/blue" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rSeek"
+        android:layout_alignParentBottom="true"
+        android:text="@string/errore_di_invio"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/gSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/green"
+        android:layout_alignRight="@+id/green"
+        android:layout_alignTop="@+id/rSeek" />
+
+    <TextView
+        android:id="@+id/redInten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gSeek"
+        android:layout_alignLeft="@+id/rSeek"
+        android:layout_marginLeft="24dp"
+        android:text="Int:" />
+
+    <TextView
+        android:id="@+id/blueInten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bSeek"
+        android:layout_alignLeft="@+id/bSeek"
+        android:layout_marginLeft="18dp"
+        android:text="Int:" />
+
+    <TextView
+        android:id="@+id/greenInten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/redInten"
+        android:layout_centerHorizontal="true"
+        android:text="Int:" />
+
+</RelativeLayout>
