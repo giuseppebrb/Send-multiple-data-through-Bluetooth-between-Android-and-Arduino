@@ -21,6 +21,7 @@ It works in the following way:
 
 
 *Note that you have to know the MAC address and insert it into MainActivity.java code. If you don't know how to find it, after created the circuit and turned it on you can find it using an app such as https://play.google.com/store/apps/details?id=com.ccpcreations.android.bluetoothmacfinder&hl=it
+![The circuit](http://s30.postimg.org/fxx64wt35/Circuit.jpg)
 ![The circuit](http://s30.postimg.org/g34qtppvl/20160115_111830.jpg)
 
 
